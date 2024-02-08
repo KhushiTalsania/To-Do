@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #screen{
+            padding: 10px;
+            border: 2px solid navy;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        #table{
+            border: 2px solid navy;
+            border-radius: 5px;
+            border-collapse: collapse;
+            max-width: fit-content;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 style="text-align: center; color: rgb(48, 59, 216)">To Do List</h1>
+        <div id="table">
+            <h2 style="text-align: center; text-decoration: underline;">Task List</h2>
+            Enter Task: <input type="text" id="taskTitle" placeholder="Enter Task Title" style="margin: 5px;"/><br/>
+            Enter Description: <textarea type="text" id="taskDesc" placeholder="Enter Task Desc" style="margin: 5px; height: 25px; min-height: 35px;" rows="5" cols="25"></textarea><br/>
+            <button onclick="create()" style="margin-bottom: 20px; margin-top: 5px;">Add Task</button>
+            <table id="screen" align="center" border="2px solid navy" cellspacing="2px" cellpadding="5px">
+                <tr>
+                    <th>Task Title</th>
+                    <th>Task Desc</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="todo.js"></script>
+</body>
+</html>
